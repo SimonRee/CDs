@@ -5,6 +5,15 @@ import { gsap } from "gsap";
 import {Text} from 'troika-three-text'
 import lottie from "lottie-web"; 
 
+//animazione di caricamento
+lottie.loadAnimation({
+  container: document.getElementById("loading-animation"),
+  renderer: "svg",
+  loop: true,
+  autoplay: true,
+  path: "/testa.json", // assicurati che il path sia corretto
+});
+
 const isMobile = window.innerWidth < 768; // Controlla se il dispositivo è mobile // per testare imposta a true
 
 //PRELOAD DELLA PAGINA
@@ -33,14 +42,7 @@ manager.onError = (url) => {
   console.error(` Errore nel caricamento di ${url}`);
 };
 
-//animazione di caricamento
-lottie.loadAnimation({
-  container: document.getElementById("loading-animation"),
-  renderer: "svg",
-  loop: true,
-  autoplay: true,
-  path: "/testa.json", // assicurati che il path sia corretto
-});
+
 
 const scene = new THREE.Scene();
 scene.fog = new THREE.Fog(0x000000, 0, 100);
