@@ -439,7 +439,7 @@ const labelRadius = 3.3;
 
 // Definisci le etichette con angolo e link
 const labelsData = [//questi dati non modificano nulla, perché le modifiche vanno fatte nella parte responsive
-  { text: 'ABOUT US', angle: Math.PI * 0.1, y: -0.97, link: 'https://wddc-groupieml.webflow.io/about' }, // basso
+  { text: 'ABOUT US', angle: Math.PI * 0.1, y: -0.97, link: 'https://wddc-groupieml.webflow.io/about?from=specchio' }, // basso
   { text: 'FLATFADE', angle: -Math.PI * 0.1, y: -0.97, link: 'https://wddc-groupieml.webflow.io/tunnel' }, // basso
   { text: 'PSICHE', angle: -Math.PI * 0.04, y: 1.06, link: 'https://wddc-groupieml.webflow.io/psiche' }, // alto
   { text: 'SPECCHIO', angle: Math.PI * 0.04, y: 1.06, link: 'https://wddc-groupieml.webflow.io/specchio' }, // alto
